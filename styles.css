@@ -29,11 +29,6 @@ section {
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    color: #003366;
-}
 
 ul {
     list-style-type: disc;
