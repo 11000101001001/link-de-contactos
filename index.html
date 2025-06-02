@@ -1,76 +1,268 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cámaras HIkvision por Mayor - PC House</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cámaras Hikvision por Mayor - PC House</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #1a1a1a;
+    }
+
+    :root {
+      --color-principal: #d60000;
+      --color-secundario: #1a1a1a;
+      --color-fondo: #f5f5f5;
+      --color-whatsapp: #25D366;
+      --color-blanco: #ffffff;
+    }
+
+    header {
+      background-color: var(--color-secundario);
+      color: var(--color-blanco);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      max-width: 130px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    header h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-top: 10px;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      color: var(--color-principal);
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    section p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    li {
+      background-color: var(--color-fondo);
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 15px 20px;
+      flex: 1 1 220px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .cta {
+      background-color: #fff4f4;
+      border: 2px solid var(--color-principal);
+      border-radius: 10px;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: var(--color-whatsapp);
+      color: white;
+      font-weight: 600;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 50px;
+      margin-top: 15px;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+      text-decoration: none;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe54;
+      transform: scale(1.05);
+    }
+
+    .whatsapp-button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .contact-info p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: var(--color-secundario);
+      color: var(--color-blanco);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      max-width: 80px;
+      margin-bottom: 20px;
+    }
+
+    footer h2 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      transition: opacity 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header h2 {
+        font-size: 1rem;
+      }
+
+      ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      li {
+        width: 90%;
+      }
+
+      .whatsapp-button {
+        width: 90%;
+        font-size: 1rem;
+        padding: 14px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="https://assets.onecompiler.app/43ka45dqe/43ka476ps/logo_pc_house.png" alt="PC House" class="logo">
-        <h1>Importá calidad. Vendé confianza.</h1>
-        <h2>Cámaras de seguridad Hikvision al mejor precio mayorista en Paraguay</h2>
-    </header>
-<div class="banner">
-    <img src="https://assets.onecompiler.app/43ka45dqe/43ka476ps/hikvision_banner.jpeg" alt="Banner Hikvision">
-</div>
-    <section class="intro">
-        <h2>¿Sos revendedor, instalador o empresa de seguridad?</h2>
-        <p>En PC House, distribuidor oficial de HIkvision, te ofrecemos soluciones integrales para potenciar tu negocio:</p>
-        <ul>
-            <li>Precios mayoristas competitivos</li>
-            <li>Stock permanente de los modelos más demandados</li>
-            <li>Envíos rápidos a todo Paraguay</li>
-            <li>Asesoría técnica especializada antes y después de la compra</li>
-            <li>Garantía y servicio técnico propio</li>
-        </ul>
-    </section>
+  <header>
+    <img src="https://assets.onecompiler.app/43ka45dqe/43ka476ps/logo_pc_house.png" alt="PC House" class="logo" />
+    <h1>Importá calidad. Vendé confianza.</h1>
+    <h2>Cámaras de seguridad Hikvision al mejor precio mayorista en Paraguay</h2>
+  </header>
 
-    <section class="products">
-        <h2>Productos Destacados</h2>
-        <ul>
-            <li>Kits DVR y NVR</li>
-            <li>Cámaras IP y analógicas</li>
-            <li>Domos motorizados</li>
-            <li>Accesorios y fuentes de alimentación</li>
-        </ul>
-        <p>¿Buscás algo específico? Te ayudamos a armar el combo ideal para tus clientes.</p>
-    </section>
+  <div class="banner">
+    <img src="https://assets.onecompiler.app/43ka45dqe/43ka476ps/hikvision_banner.jpeg" alt="Banner Hikvision" />
+  </div>
 
-    <section class="cta">
-        <h2>Solicitá tu lista de precios mayorista</h2>
-        <p>Completá el formulario y un asesor se pondrá en contacto con vos en minutos.</p>
-        
-        <p>O escribinos directamente por WhatsApp:</p>
-        <a href="https://wa.me/595985654321?text=Hola%2C%20quiero%20recibir%20la%20lista%20mayorista%20de%20FigVision" class="whatsapp-button">Escribir por WhatsApp</a>
-    </section>
+  <section class="intro">
+    <h2>¿Sos revendedor, instalador o empresa de seguridad?</h2>
+    <p>En PC House, distribuidor oficial de Hikvision, te ofrecemos soluciones integrales para potenciar tu negocio:</p>
+    <ul>
+      <li>Precios mayoristas competitivos</li>
+      <li>Stock permanente de los modelos más demandados</li>
+      <li>Envíos rápidos a todo Paraguay</li>
+      <li>Asesoría técnica especializada antes y después de la compra</li>
+      <li>Garantía y servicio técnico propio</li>
+    </ul>
+  </section>
 
-    <section class="branches">
-        <h2>Nuestras Sucursales</h2>
-        <ul>
-            <li>Hohenau</li>
-            <li>Encarnación</li>
-            <li>María Auxiliadora</li>
-            <li>Bella Vista</li>
-        </ul>
-    </section>
+  <section class="products">
+    <h2>Productos Destacados</h2>
+    <ul>
+      <li>Kits DVR y NVR</li>
+      <li>Cámaras IP y analógicas</li>
+      <li>Domos motorizados</li>
+      <li>Accesorios y fuentes de alimentación</li>
+    </ul>
+    <p>¿Buscás algo específico? Te ayudamos a armar el combo ideal para tus clientes.</p>
+  </section>
 
-    <section class="contact-info">
-        <h2>Contacto</h2>
-        <p>Teléfono: (0985) 123-456</p>
-        <p>Email: ventas@pchouse.com.py</p>
-        <p>WhatsApp: (0985) 654-321</p>
-    </section>
+  <section class="cta">
+    <h2>Solicitá tu lista de precios mayorista</h2>
+    <p>Completá el formulario y un asesor se pondrá en contacto con vos en minutos.</p>
+    <p>O escribinos directamente por WhatsApp:</p>
+    <a href="https://wa.me/595985654321?text=Hola%2C%20quiero%20recibir%20la%20lista%20mayorista%20de%20FigVision" class="whatsapp-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      Escribir por WhatsApp
+    </a>
+  </section>
 
-    <footer>
-        <img src="https://assets.onecompiler.app/43ka45dqe/43ka476ps/logo_pc_house.png" alt="PC House" class="footer-logo">
-        <h2>Seguinos en nuestras redes sociales</h2>
-        <div class="social-icons">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-        </div>
-    </footer>
+  <section class="branches">
+    <h2>Nuestras Sucursales</h2>
+    <ul>
+      <li>Hohenau</li>
+      <li>Encarnación</li>
+      <li>María Auxiliadora</li>
+      <li>Bella Vista</li>
+    </ul>
+  </section>
+
+  <section class="contact-info">
+    <h2>Contacto</h2>
+    <p>Teléfono: (0985) 123-456</p>
+    <p>Email: ventas@pchouse.com.py</p>
+    <p>WhatsApp: (0985) 654-321</p>
+  </section>
+
+  <footer>
+    <img src="https://assets.onecompiler.app/43ka45dqe/43ka476ps/logo_pc_house.png" alt="PC House" class="footer-logo" />
+    <h2>Seguinos en nuestras redes sociales</h2>
+    <h2>Como PC HOUSE INFORMATICA</h2>
+
+  </footer>
 </body>
 </html>
